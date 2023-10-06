@@ -1,0 +1,441 @@
+{
+    "input_examples": [
+        {
+            "input": {
+                "Username": "ivanthereasonable",
+                "Comments": [
+                    {
+                        "Username": "ivanthereasonable",
+                        "Message": "SAFC 3 - Watford 1 Clarke.",
+                        "CommentedAtUtc": "2023-10-04T08:16:52Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "ivanthereasonable",
+                "sunderlandGoals": 3,
+                "oppositionGoals": 1,
+                "firstSunderlandGoalScorer": "Clarke",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "meeowdam",
+                "Comments": [
+                    {
+                        "Username": "meeowdam",
+                        "Message": "Sunderland 5 Watford 2 Clarke",
+                        "CommentedAtUtc": "2023-10-04T08:17:04Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "meeowdam",
+                "sunderlandGoals": 5,
+                "oppositionGoals": 2,
+                "firstSunderlandGoalScorer": "Clarke",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "HoxtonMackem",
+                "Comments": [
+                    {
+                        "Username": "HoxtonMackem",
+                        "Message": "2-0 Aouchiche",
+                        "CommentedAtUtc": "2023-10-04T08:17:52Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "HoxtonMackem",
+                "sunderlandGoals": 2,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": "Aouchiche",
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "cabbage",
+                "Comments": [
+                    {
+                        "Username": "cabbage",
+                        "Message": "2-0 burstow",
+                        "CommentedAtUtc": "2023-10-04T08:19:20Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "cabbage",
+                "sunderlandGoals": 2,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": "burstow",
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "Windypants",
+                "Comments": [
+                    {
+                        "Username": "Windypants",
+                        "Message": "Up to 20th, so I\u0027m sticking with 3-0 to us and Jack Clarke as fgs.",
+                        "CommentedAtUtc": "2023-10-04T08:19:32Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Windypants",
+                "sunderlandGoals": 3,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": "Jack Clarke",
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "Mally Mackem",
+                "Comments": [
+                    {
+                        "Username": "Mally Mackem",
+                        "Message": "sunlun 3 watford 1 clarke",
+                        "CommentedAtUtc": "2023-10-04T08:20:43Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Mally Mackem",
+                "sunderlandGoals": 3,
+                "oppositionGoals": 1,
+                "firstSunderlandGoalScorer": "clarke",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "Cyprus",
+                "Comments": [
+                    {
+                        "Username": "Cyprus",
+                        "Message": "Sunderland 2-0 Watford (Clarke)",
+                        "CommentedAtUtc": "2023-10-04T08:20:48Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Cyprus",
+                "sunderlandGoals": 2,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": "Clarke",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "Walter H. White",
+                "Comments": [
+                    {
+                        "Username": "Walter H. White",
+                        "Message": "Sunderland 3-1 Watford Clarkey",
+                        "CommentedAtUtc": "2023-10-04T08:21:09Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Walter H. White",
+                "sunderlandGoals": 3,
+                "oppositionGoals": 1,
+                "firstSunderlandGoalScorer": "Clarkey",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "RedRoseBlackCat",
+                "Comments": [
+                    {
+                        "Username": "RedRoseBlackCat",
+                        "Message": "Sunderland 1, Watford 1 Clarke Now that I\u0027ve finally voted for him watch a striker score instead.",
+                        "CommentedAtUtc": "2023-10-04T08:22:02Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "RedRoseBlackCat",
+                "sunderlandGoals": 1,
+                "oppositionGoals": 1,
+                "firstSunderlandGoalScorer": "Clarke",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "paddy",
+                "Comments": [
+                    {
+                        "Username": "paddy",
+                        "Message": "nil - nil",
+                        "CommentedAtUtc": "2023-10-04T08:22:02Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "paddy",
+                "sunderlandGoals": 0,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": null,
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "Gazoliver",
+                "Comments": [
+                    {
+                        "Username": "Gazoliver",
+                        "Message": "Safc 2-0 Watford Clarke",
+                        "CommentedAtUtc": "2023-10-04T08:23:07Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Gazoliver",
+                "sunderlandGoals": 2,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": "Clarke",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "sunderpitt",
+                "Comments": [
+                    {
+                        "Username": "sunderpitt",
+                        "Message": "Watford fans seem to think they will get well beaten.. Hmm, means they will play defensively with two banks of 5, and catch us on the break. Mowbray mentioned something along these lines in his presser yesterday.",
+                        "CommentedAtUtc": "2023-10-04T08:24:43Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "sunderpitt",
+                "sunderlandGoals": null,
+                "oppositionGoals": null,
+                "firstSunderlandGoalScorer": null,
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "VHFC",
+                "Comments": [
+                    {
+                        "Username": "VHFC",
+                        "Message": "Sunderland 4 Watford 1 Clarke first goal scorer",
+                        "CommentedAtUtc": "2023-10-04T08:25:02Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "VHFC",
+                "sunderlandGoals": 4,
+                "oppositionGoals": 1,
+                "firstSunderlandGoalScorer": "Clarke",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "Hettonlass",
+                "Comments": [
+                    {
+                        "Username": "Hettonlass",
+                        "Message": "0-0",
+                        "CommentedAtUtc": "2023-10-04T08:26:03Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Hettonlass",
+                "sunderlandGoals": 0,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": null,
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "CornerShop",
+                "Comments": [
+                    {
+                        "Username": "CornerShop",
+                        "Message": "1-0 bellingham",
+                        "CommentedAtUtc": "2023-10-04T08:26:32Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "CornerShop",
+                "sunderlandGoals": 1,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": "bellingham",
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "HarrogateMackem",
+                "Comments": [
+                    {
+                        "Username": "HarrogateMackem",
+                        "Message": "Sunderland 2-1 Watford Jobe",
+                        "CommentedAtUtc": "2023-10-04T08:26:48Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "HarrogateMackem",
+                "sunderlandGoals": 2,
+                "oppositionGoals": 1,
+                "firstSunderlandGoalScorer": "Jobe",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "Stormo",
+                "Comments": [
+                    {
+                        "Username": "Stormo",
+                        "Message": "2-2 Clarke",
+                        "CommentedAtUtc": "2023-10-04T08:27:07Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Stormo",
+                "sunderlandGoals": 2,
+                "oppositionGoals": 2,
+                "firstSunderlandGoalScorer": "Clarke",
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "Johnny3773",
+                "Comments": [
+                    {
+                        "Username": "Johnny3773",
+                        "Message": "Sunderland 2 - 0 Watford Clarke 1st goal \uFE0F\uFE0F",
+                        "CommentedAtUtc": "2023-10-04T08:28:06Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Johnny3773",
+                "sunderlandGoals": 2,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": "Clarke",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "Super Ted",
+                "Comments": [
+                    {
+                        "Username": "Super Ted",
+                        "Message": "Sunderland 1 Watford 1 Roberts.",
+                        "CommentedAtUtc": "2023-10-04T08:28:10Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Super Ted",
+                "sunderlandGoals": 1,
+                "oppositionGoals": 1,
+                "firstSunderlandGoalScorer": "Roberts",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "Get Into Em",
+                "Comments": [
+                    {
+                        "Username": "Get Into Em",
+                        "Message": "Apologies for how long this one took to get out - had a massive mess up last night when sorting the results from the Sheff Wed game.",
+                        "CommentedAtUtc": "2023-10-04T08:40:00Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Get Into Em",
+                "sunderlandGoals": null,
+                "oppositionGoals": null,
+                "firstSunderlandGoalScorer": null,
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "HABA87",
+                "Comments": [
+                    {
+                        "Username": "HABA87",
+                        "Message": "3-1 Ballard again",
+                        "CommentedAtUtc": "2023-10-04T08:42:28Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "HABA87",
+                "sunderlandGoals": 3,
+                "oppositionGoals": 1,
+                "firstSunderlandGoalScorer": "Ballard",
+                "providedTeamNames": false
+            }
+        },
+        {
+            "input": {
+                "Username": "BIG MAL",
+                "Comments": [
+                    {
+                        "Username": "BIG MAL",
+                        "Message": "SAFC 5 - 0 Watford Pritchard",
+                        "CommentedAtUtc": "2023-10-04T08:49:48Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "BIG MAL",
+                "sunderlandGoals": 5,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": "Pritchard",
+                "providedTeamNames": true
+            }
+        },
+        {
+            "input": {
+                "Username": "Far Tibetan Mountain",
+                "Comments": [
+                    {
+                        "Username": "Far Tibetan Mountain",
+                        "Message": "Safc 2 Watford 0 Clarke",
+                        "CommentedAtUtc": "2023-10-04T08:51:45Z"
+                    }
+                ]
+            },
+            "label": {
+                "username": "Far Tibetan Mountain",
+                "sunderlandGoals": 2,
+                "oppositionGoals": 0,
+                "firstSunderlandGoalScorer": "Clarke",
+                "providedTeamNames": true
+            }
+        }
+    ]
+}
