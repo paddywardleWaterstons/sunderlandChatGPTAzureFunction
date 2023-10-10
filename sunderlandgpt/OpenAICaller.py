@@ -1,6 +1,8 @@
 import openai
 import time
 import os
+import json
+import logging
 
 class OpenAICaller:
 
@@ -32,15 +34,20 @@ class OpenAICaller:
         
         return response
     
-    def chat_iterator(self, system_message:str, user_full:str):
+    def chat_iterator(self, system_message:str, user_full:str, chunk_size: int=10):
 
         resp_full = []
+        #["comments"][0]["message"]
+        for i in range(0, len(user_full), chunk_size):
 
-        for i, user in enumerate(user_full):
+            user = user_full[i:i+chunk_size]
 
-            resp = self.chat(system_message, str(user))
+            resp = self.chat(system_message, str(user))["choices"][0]["message"]["content"]
+
+            resp = resp.replace("'", '"')
             
-            # index into json to get response and add to list
-            resp_full.append(resp["choices"][0]["message"])
+            resp = resp[:-1] + ", \"originalComment\": \"{}\" }}".format(str(user[0]["Comments"][0]["Message"]))
+
+            resp_full.append(resp)
         
         return resp_full
